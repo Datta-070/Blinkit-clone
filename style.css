@@ -1,0 +1,233 @@
+nav{
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 2;
+}
+.vertical-line{
+    border-left: 2px solid #f2f2f2;
+    height:60px;
+}
+.nav-delivery>h3{
+    font-weight: 900;
+    margin-top: 15px;
+    font-size:18px;
+}
+.nav-delivery>p{
+    font-size:13px;
+}
+#search-bar{
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    padding-inline:10px;
+}
+#search-bar>input{
+    border:none;
+    width:40vw;
+    height:50px;
+    background-color: transparent;
+}
+.cart-btn{
+    border-radius: 15px !important;
+    font-weight:700 !important;
+}
+#hero-section{
+    display:flex;
+    justify-content: center;
+}
+#category-1{
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 1vw;
+    justify-content: space-around;   
+}
+.scroll-container{
+    width:95.5vw;
+    margin:auto;
+}
+.list{
+    white-space: nowrap;
+    overflow-x:scroll;
+}
+.list::-webkit-scrollbar{
+    display:none;
+}
+.list>img{
+    display: inline-block;
+}
+.category{
+    width:95.5vw;
+    margin:auto;
+    margin-bottom: 15px;
+}
+.my-card{
+    display: inline-block !important;
+    width:220px;
+    box-sizing: border-box;
+    border-radius: 15px !important;
+    white-space:wrap;
+}
+.my-card>img{
+    display: inline-block;
+    margin:auto;
+}
+.time{
+    background-color: #f2f2f2;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(54, 54, 54);
+    width:fit-content;
+    padding:3px;
+    border-radius: 10px;
+}
+.product_weight{
+    font-size: 13px;
+    color: #666666;
+}
+.row-3>p{
+    margin: 0px;
+}
+.my-tag{
+    position: absolute;
+    top: 0px;
+    right:1px;
+    width:40px;
+    background-color: orangered;
+    border-top-right-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+    color: azure;
+}
+footer{
+    width:94vw;
+    margin: auto;
+}
+#my-footer-3{
+    font-size: 15px;
+    text-align: justify;
+    color: #666666;
+}
+#my-footer-2{
+    font-size: 13px;
+    text-align: justify;
+    color: #666666;
+    display: flex;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+#footer-2-col1{
+    flex:1;
+    padding-inline:10px;
+}
+#footer-2-col2{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer-2-col2>h6{
+    color: #666666;
+    margin: 0px;
+}
+.some-box{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3px;
+    background-color:#213a50
+}
+#footer-2-col3{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    border-radius: 50%;
+}
+.social-icon:hover{
+    color: black;
+    background-color: #f8cb45;
+    box-shadow: 3px 3px 5px black;
+}
+#my-footer-1{
+    display: flex;
+    margin-top: 30px;
+}
+#footer-table-1{
+    flex:2;
+    width: 100%;
+}
+#footer-table-2{
+    flex:3;
+}
+table{
+    width: 100%;
+}
+td{
+    color: #666666;
+    width: 33%;
+    line-height:  40px;
+}
+td:hover{
+    cursor: pointer;
+    width: 33%;
+    line-height:  40px;
+    text-decoration: underline;
+    color: orangered;
+}
+
+@media screen and (max-width:480px) {
+    #hero-section{
+        display: none !important;
+    }
+    nav, #my-footer-1{
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: auto;
+    }
+    #footer-2-col2, #my-footer-2, #footer-table-1, #footer-table-2{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: 20px;
+    }
+    td{
+        padding-inline: 10px ;
+        text-align: center;
+        font-size: 13px;
+    }
+    .some-box{
+        margin-top: 10px;
+    }
+    #footer-2-col3{
+        justify-content: space-between;
+        width: 70vw;
+        margin-top: 25px;
+    }
+    .vertical-line{
+        display: none;
+    }
+    #search-bar{
+        width: 90vw;
+    }
+    nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: static;
+    }
+}
