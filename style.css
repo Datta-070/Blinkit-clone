@@ -1,3 +1,5 @@
+/*Designing of Nav Bar*/
+
 nav{
     position: sticky;
     top:0px;
@@ -32,10 +34,16 @@ nav{
     border-radius: 15px !important;
     font-weight:700 !important;
 }
+
+/*Designing of Hero Section*/
+
 #hero-section{
     display:flex;
     justify-content: center;
 }
+
+/*Designing the scroll-container & lists */
+
 #category-1{
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +96,9 @@ nav{
 .row-3>p{
     margin: 0px;
 }
+
+/*Designing a discount tag*/
+
 .my-tag{
     position: absolute;
     top: 0px;
@@ -100,6 +111,9 @@ nav{
     font-size: 13px;
     color: azure;
 }
+
+/*Designing of Footer*/
+
 footer{
     width:94vw;
     margin: auto;
@@ -147,6 +161,9 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+/*Designing of Social Media icons*/
+
 .social-icon{
     height: 40px;
     width: 40px;
@@ -180,7 +197,6 @@ footer{
     0 0 90px #0ff,
     0 0 100px #0ff,
     0 0 150px #0ff;
-    animation: slide-left 20s linear infinite;
     font-family: Arial;
     animation: fadeIn 5s infinite ease-in-out;
 }
@@ -217,6 +233,8 @@ td:hover{
     text-decoration: underline;
     color: orangered;
 }
+
+/*Using Media Queries to make the page responsive*/
 
 @media screen and (max-width:480px) {
     #hero-section{
